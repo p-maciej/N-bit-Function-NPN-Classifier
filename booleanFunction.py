@@ -29,12 +29,9 @@ class BooleanFunction:
         sMap = sorted(list(self.__map.items()))
         out = str(self.functionClass) + ";"
         for keys in sMap:
-            out +=  str(keys[1])
+            out += str(keys[1])
 
         return out
-
-    # def __lt__(self, other):
-    #     return list(self.__map.values()) < list(other.__map.values())
 
     def __lt__(self, other):
         return self.functionClass < other.functionClass

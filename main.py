@@ -113,9 +113,11 @@ def generateBooleanFunctionNPNClasses(inputs, functions): #classify NPN function
 
     return dataset
 
-inputs, functions = generateIrreversibleFunctions(4) # generated functions
+
+
+inputs, functions = generateIrreversibleFunctions(2) # generated functions
 dataset = generateBooleanFunctionNPNClasses(inputs, functions)
-dataset = sorted(dataset) # sorted by functions
+dataset = sorted(dataset)
 
 for item in dataset:
     print(item)
